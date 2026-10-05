@@ -4536,8 +4536,8 @@ input[type="button"].btn-block {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: rgba(255, 255, 255, 1);
-  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  background-color: rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .card-header:first-child {
@@ -6054,7 +6054,7 @@ a.close.disabled {
   width: 1rem;
   margin-left: -0.5rem;
   content: "";
-  border-bottom: 1px solid #f7f7f7;
+  border-bottom: 1px solid #000000;
 }
 
 .bs-popover-left, .bs-popover-auto[x-placement^="left"] {
@@ -6084,8 +6084,8 @@ a.close.disabled {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
-  color: #343a40;
-  background-color: #f7f7f7;
+  color: darkblue;
+  background-color: darkblue;
   border-bottom: 1px solid #ebebeb;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
@@ -9932,6 +9932,16 @@ h6,
 .testimonial-carousel .owl-dots {
   margin-top: 25px;
   text-align: center;
+}
+
+#home {
+  position: relative;
+  overflow: hidden;
+}
+
+#home > .container {
+  position: relative;
+  z-index: 1;
 }
 
 .testimonial-carousel .owl-dot {
